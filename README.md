@@ -36,3 +36,28 @@ graph TD;
     J -- No --> D;
 ```
 
+### Training_Loop_01.ipynb
+The training loop set up in Training_Loop_01.ipynb fine-tunes a pretrained model 
+on a new (and very simple!) dataset. 
+
+### Diagram for Training_Loop_01.ipynb
+
+```mermaid
+graph TD;
+    A[Initialize Model and Tokenizer] --> B[Prepare Data];
+    B --> C[Define Optimizer and Loss Function];
+    C --> D[Start Training Loop];
+    D --> E{More Epochs?};
+    E -- Yes --> F[Train on Batch];
+    F --> G[Compute Loss];
+    G --> H[Backpropagate];
+    H --> I[Update Parameters];
+    I --> J{More Batches?};
+    J -- Yes --> F;
+    J -- No --> D;
+```
+
+
+
+
+
