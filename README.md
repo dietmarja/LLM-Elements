@@ -36,18 +36,3 @@ graph TD;
     J -- No --> D;
 
 
-
-### Training_Loop_02.ipynb
-The training loop set up in Training_Loop_02.ipynb fine-tunes a pretrained model 
-on a new (and very simple!) dataset. Fine-tuning involves updating the weights 
-of the pretrained model so that it can better handle the specific data it is being 
-trained on. Key processing steps involve:
-
-- Prepare the training loop
-    - Initialize a pretrained model and a tokenizer via the transformer library from Huggingface
-    - Standardize the length of input sequences via padding tokens
-    - Make training data availablle
-    - Define the optimizer (Adaptive Moment Estimation, Adam) and the loss function (Cross-Entropy)
-- Run the training loop for echoch=3 iterations
-
-### Training Loop Diagram for Training_Loop_02.ipynb
