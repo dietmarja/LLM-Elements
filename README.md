@@ -47,15 +47,3 @@ trained on. Key processing steps involve:
 - Run the training loop for echoch=3 iterations
 
 ### Training Loop Diagram for Training_Loop_02.ipynb
-
-
-```mermaid
-graph TD
-   A[Import Libraries] --> B[Initialize Model & Tokenizer]
-   B --> C[Add Padding Token if Missing]
-   C --> D[Prepare Data]
-   D --> E[Define Optimizer & Loss Function]
-   E --> F[Training Loop]
-   F --> G[Validation Loop]
-   G --> H[Generate Sample Output]
-   H --> I[Print Training Completed]
