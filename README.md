@@ -10,7 +10,8 @@ trained on. Key processing steps involve:
     - Standardize the length of input sequences via padding tokens
     - Make training data availablle
     - Define the optimizer (Adaptive Moment Estimation, Adam) and the loss function (Cross-Entropy)
-- Run the training loop a number of epochs
+- Run the training loop
+    - An outer for loop runs over the epocs and an innner for loop iterates over batches
 
 Next I describe a sequence of Jupyter Notebooks which carries out fine tuning. We start with a simple approach to fine-tuning and 
 add more bells and whistles in more complex version of fine-tuning
