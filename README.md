@@ -4,11 +4,12 @@ Fine-tuning involves updating the weights of the pretrained model
 so that it can better handle the specific data it is being trained on.
 Key processing steps involve
 
+$$
 \begin{itemize}
   \item loading a pretrained model via the transformery librar froh Huggingface
   \item loading a tokenizer via the transformer library froh Huggingface
 \end{itemize}
-
+$$
 
 ### Training Loop Diagram for Training_Loop_01.ipynb
 
