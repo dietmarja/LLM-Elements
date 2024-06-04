@@ -36,10 +36,3 @@ graph TD;
     J -- No --> D;
 
 
-
-### Training_Loop_02.ipynb
-The training loop set up in Training_Loop_01.ipynb fine-tunes a pretrained model 
-on a new (and very simple!) dataset. 
-
-### Diagram for Training_Loop_02.ipynb
-
