@@ -3,7 +3,7 @@ The training loop fine-tunes the pretrained model on a new dataset.
 Fine-tuning involves updating the weights of the pretrained model 
 so that it can better handle the specific data it is being trained on.
 
-### Training Loop Diagram
+### Training Loop Diagram for Training_Loop_01.ipynb
 
 ```mermaid
 graph TD;
