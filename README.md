@@ -1,6 +1,4 @@
-<div align="center">
-    # Fine Tuning
-</div>
+<h1 align="center">Fine Tuning</h1>
 
 
 Fine-tuning a pretrained large language model involves updating its weights 
