@@ -11,10 +11,12 @@ trained on. Key processing steps involve:
     - Make training data availablle
     - Define the optimizer (Adaptive Moment Estimation, Adam) and the loss function (Cross-Entropy)
 - Run the training loop
-    - An outer for loop runs over the epocs and an innner for loop iterates over batches
+    - An outer for loop runs over the epocs and an innner for loop iterates over batches. Core processing tasks are carried out in the inner loop:
+      input preparation, forward pass including loss calculation, resetting the optimizer's gradients to zero, backpropagation and updating the model 
+      parameters via the optimizer and print out of the loss. 
 
-Next I describe a sequence of Jupyter Notebooks which carries out fine tuning. We start with a simple approach to fine-tuning and 
-add more bells and whistles in more complex version of fine-tuning
+Next I describe a sequence of Jupyter Notebooks which carries out fine tuning. 
+We start with a simple approach to fine-tuning and add more bells and whistles in more complex version of fine-tuning
 
 
 
