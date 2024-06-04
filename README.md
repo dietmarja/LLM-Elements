@@ -1,4 +1,8 @@
-# Fine Tuning
+<div align="center">
+    # Fine Tuning
+</div>
+
+
 Fine-tuning a pretrained large language model involves updating its weights 
 so that the model can better handle the specific data it is being 
 trained on. Key processing steps involve:
