@@ -19,7 +19,7 @@ add more bells and whistles in more complex version of fine-tuning
 The training loop set up in Training_Loop_01.ipynb fine-tunes a pretrained model 
 on a new (and very simple!) dataset. 
 
-### Training Loop Diagram for Training_Loop_01.ipynb
+### Diagram for Training_Loop_01.ipynb
 
 ```mermaid
 graph TD;
@@ -35,4 +35,11 @@ graph TD;
     J -- Yes --> F;
     J -- No --> D;
 
+
+
+### Training_Loop_02.ipynb
+The training loop set up in Training_Loop_01.ipynb fine-tunes a pretrained model 
+on a new (and very simple!) dataset. 
+
+### Diagram for Training_Loop_02.ipynb
 
