@@ -15,8 +15,8 @@ trained on. Key processing steps involve:
       input preparation, forward pass including loss calculation, resetting the optimizer's gradients to zero, backpropagation and updating the model 
       parameters via the optimizer and print out of the loss. 
 
-Next I describe a sequence of Jupyter Notebooks which carries out fine tuning. 
-We start with a simple approach to fine-tuning and add more bells and whistles in more complex version of fine-tuning
+Next I describe a sequence of Jupyter Notebooks which carries out fine tuning on next-token prediction. 
+We start with a simple approach to fine-tuning and add more bells and whistles as we move over to more complex versions of fine-tuning
 
 
 
