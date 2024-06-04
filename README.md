@@ -2,14 +2,10 @@
 The training loop fine-tunes the pretrained model on a new dataset. 
 Fine-tuning involves updating the weights of the pretrained model 
 so that it can better handle the specific data it is being trained on.
-Key processing steps involve
+Key processing steps involve:
 
-$$
-\begin{itemize}
-  \item loading a pretrained model via the transformery librar froh Huggingface
-  \item loading a tokenizer via the transformer library froh Huggingface
-\end{itemize}
-$$
+- Loading a pretrained model via the transformer library from Huggingface
+- Loading a tokenizer via the transformer library from Huggingface
 
 ### Training Loop Diagram for Training_Loop_01.ipynb
 
