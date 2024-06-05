@@ -43,7 +43,8 @@ graph TD;
 
 ### Training_Loop_02.ipynb
 The training loop set up in Training_Loop_01.ipynb fine-tunes a pretrained model 
-on a new (and very simple!) dataset. 
+on a new (and very simple!) dataset. We will now extend this example by inclduing 
+a validation set to monitor overfitting and generalization.
 
 ### Diagram for Training_Loop_02.ipynb
 
