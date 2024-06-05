@@ -16,7 +16,8 @@ trained on. Key processing steps involve:
       parameters via the optimizer and print out of the loss. 
 
 Next I describe a sequence of Jupyter Notebooks which carries out fine tuning on next-token prediction. 
-We start with a simple approach to fine-tuning and add more bells and whistles as we move over to more complex versions of fine-tuning
+We start with a simple approach to fine-tuning and add more bells and whistles as we move over to more complex versions of fine-tuning. 
+Each approach is illustrated by a self-explantory mermaid diagram that follows closely the Python code. 
 
 
 
