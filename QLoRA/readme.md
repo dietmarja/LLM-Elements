@@ -1,5 +1,8 @@
 <h1 align="center">QLoRA</h1>
 
+
+QLora -- sometimes called LoRA 2.0 -- attempts to take fine-tuning to the next level
+
 Fine-tuning is necessary to give a pretrained large language model (LLM) a particular focus such that it is able to carry out a specific task in a desirable way. 
 However, fine-tuning large-scale models involves updating billions of parameters, which is extremely expensive in terms of memory and time requirements. 
 To address this issue, several techniques have been proposed to reduce the memory footprint of full parameter fine-tuning without compromising model quality. 
