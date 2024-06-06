@@ -1,4 +1,4 @@
-<h1 align="center">LoRA</h1>
+<h1 align="center">QLoRA</h1>
 
 Fine-tuning is necessary to give a pretrained large language model (LLM) a particular focus such that it is able to carry out a specific task in a desirable way. 
 However, fine-tuning large-scale models involves updating billions of parameters, which is extremely expensive in terms of memory and time requirements. 
