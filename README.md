@@ -11,7 +11,7 @@ trained on. Key processing steps involve:
     - Make training data availablle
     - Define the optimizer (Adaptive Moment Estimation, Adam) and the loss function (Cross-Entropy)
 - Run the training loop
-    - An outer for loop runs over the epocs and an innner for loop iterates over batches. Core processing tasks are carried out in the inner loop:
+    - An outer for loop runs over the epochs and an innner for loop iterates over batches. Core processing tasks are carried out in the inner loop:
       input preparation, forward pass including loss calculation, resetting the optimizer's gradients to zero, backpropagation and updating the model 
       parameters via the optimizer and print out of the loss. 
 
