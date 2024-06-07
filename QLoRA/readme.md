@@ -1,7 +1,11 @@
 <h1 align="center">QLoRA</h1>
 
+<!--- Parameter-efficient finetuning methods reduce the memory footprint during training by freezing a pretrained LLM and only training a small number of additional parameters, often called adapters. --->
 
-QLora -- sometimes called LoRA 2.0 -- attempts to take fine-tuning to the next level [^1].
+
+QLoRA, also known as LoRA 2.0, is a parameter-efficient fine-tuning (PEFT) method that enhances traditional fine-tuning techniques (Dettmers et al., 2024). Using low-rank adapters (LoRA, Hu et al., 2021), QLoRA employs quantization to further reduce the memory footprint of large language models (LLMs). In machine learning, quantization typically involves converting neural network parameters (e.g., weights and biases) from higher precision (e.g., 32-bit floating-point) to lower precision (e.g., 8-bit integer or 16-bit floating-point).
+
+ 
 
 
 
@@ -98,8 +102,10 @@ tensor([[ 0.3414, -0.2377, -0.2392, -0.2219],
         [-0.0715,  0.2588,  0.2680,  0.2750],
         [ 0.1021,  0.3189,  0.3937,  0.3194],
         [-0.1458, -0.3615, -0.0903, -0.2763]])
-
+````
 
 
 ## References
-[^1] Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L. (2024). Qlora: Efficient finetuning of quantized llms. Advances in Neural Information Processing Systems, 36.
+Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L. (2024). Qlora: Efficient finetuning of quantized llms. Advances in Neural Information Processing Systems, 36.
+
+Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., & Chen, W. (2021). Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.096
