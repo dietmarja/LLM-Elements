@@ -1,7 +1,7 @@
 <h1 align="center">QLoRA</h1>
 
 
-QLora -- sometimes called LoRA 2.0 -- attempts to take fine-tuning to the next level [^1]. 
+QLora -- sometimes called LoRA 2.0 -- attempts to take fine-tuning to the next level [Dettmers et al., 2021](#reference-1).
 
 
 
@@ -102,4 +102,4 @@ tensor([[ 0.3414, -0.2377, -0.2392, -0.2219],
 
 
 ## References
-[^1]: Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L. (2024). Qlora: Efficient finetuning of quantized llms. Advances in Neural Information Processing Systems, 36.
+<a id="reference-1"></a>  Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L. (2024). Qlora: Efficient finetuning of quantized llms. Advances in Neural Information Processing Systems, 36.
