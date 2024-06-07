@@ -2,6 +2,9 @@
 
 <!--- Parameter-efficient finetuning methods reduce the memory footprint during training by freezing a pretrained LLM and only training a small number of additional parameters, often called adapters. 
 full fine-tuning (FT).
+
+https://brev.dev/blog/how-qlora-works
+
 --->
 
 
