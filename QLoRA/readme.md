@@ -1,7 +1,9 @@
 <h1 align="center">QLoRA</h1>
 
 
-QLora -- sometimes called LoRA 2.0 -- attempts to take fine-tuning to the next level
+QLora -- sometimes called LoRA 2.0 -- attempts to take fine-tuning to the next level [^1]. 
+
+
 
 Fine-tuning is necessary to give a pretrained large language model (LLM) a particular focus such that it is able to carry out a specific task in a desirable way. 
 However, fine-tuning large-scale models involves updating billions of parameters, which is extremely expensive in terms of memory and time requirements. 
@@ -97,3 +99,7 @@ tensor([[ 0.3414, -0.2377, -0.2392, -0.2219],
         [ 0.1021,  0.3189,  0.3937,  0.3194],
         [-0.1458, -0.3615, -0.0903, -0.2763]])
 
+
+
+## References
+[^1]: Dettmers, T., Pagnoni, A., Holtzman, A., & Zettlemoyer, L. (2024). Qlora: Efficient finetuning of quantized llms. Advances in Neural Information Processing Systems, 36.
