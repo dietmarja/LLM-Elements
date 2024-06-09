@@ -9,7 +9,6 @@ and Metamorphosis by Franz Kafka (1912).
 
 
 
-
 ```mermaid
 graph TD
     A[Start of "Moby Dick" text] -->|Tokenizer| B[Tokenize "Moby Dick" text]
@@ -51,5 +50,3 @@ graph TD
     X --> Y
 ```
 
-
-%%%%%%%%%%%%%
