@@ -11,6 +11,7 @@ and Metamorphosis by Franz Kafka (1912).
 
 ```mermaid
 graph TD
+graph TD
     A[Start of "Moby Dick" text] -->|Tokenizer| B[Tokenize "Moby Dick" text]
     B --> C[Pad "Moby Dick" sequences]
     
@@ -22,8 +23,7 @@ graph TD
     
     G --> H[Combine labels]
     
-    I[Define vocabulary sizes for both texts]
-    I --> J[Define embedding dimensionality]
+    I[Define vocabulary sizes for both texts] --> J[Define embedding dimensionality]
     
     J --> K[Create embedding layer for "Moby Dick"]
     J --> L[Create embedding layer for "Metamorphosis"]
