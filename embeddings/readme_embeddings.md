@@ -10,41 +10,41 @@ and Metamorphosis by Franz Kafka (1912).
 
 
 ```mermaid
-    graph TD
-    A[Start of "Moby Dick" text] -->|Tokenizer| B[Tokenize "Moby Dick" text]
-    B --> C[Pad "Moby Dick" sequences]
+graph TD
+    A[Start of Moby Dick text] -->|Tokenizer| B[Tokenize Moby Dick text]
+    B --> C[Pad Moby Dick sequences]
     
-    D[Start of "Metamorphosis" text] -->|Tokenizer| E[Tokenize "Metamorphosis" text]
-    E --> F[Pad "Metamorphosis" sequences]
+    D[Start of Metamorphosis text] -->|Tokenizer| E[Tokenize Metamorphosis text]
+    E --> F[Pad Metamorphosis sequences]
     
     C --> G[Combine padded documents]
     F --> G
     
     G --> H[Combine labels]
     
-    I[Define vocabulary sizes for both texts]
+    H --> I[Define vocabulary sizes for both texts]
     I --> J[Define embedding dimensionality]
     
-    J --> K[Create embedding layer for "Moby Dick"]
-    J --> L[Create embedding layer for "Metamorphosis"]
+    J --> K[Create embedding layer for Moby Dick]
+    J --> L[Create embedding layer for Metamorphosis]
     
-    K --> M[Define model architecture for "Moby Dick"]
-    L --> N[Define model architecture for "Metamorphosis"]
+    K --> M[Define model architecture for Moby Dick]
+    L --> N[Define model architecture for Metamorphosis]
     
-    M --> O[Compile "Moby Dick" model]
-    N --> P[Compile "Metamorphosis" model]
+    M --> O[Compile Moby Dick model]
+    N --> P[Compile Metamorphosis model]
     
-    O --> Q[Get embeddings for "Moby Dick"]
-    P --> R[Get embeddings for "Metamorphosis"]
+    O --> Q[Get embeddings for Moby Dick]
+    P --> R[Get embeddings for Metamorphosis]
     
-    Q --> S[Reshape embeddings for PCA ("Moby Dick")]
-    R --> T[Reshape embeddings for PCA ("Metamorphosis")]
+    Q --> S[Reshape embeddings for PCA Moby Dick]
+    R --> T[Reshape embeddings for PCA Metamorphosis]
     
-    S --> U[Reduce dimensionality using PCA ("Moby Dick")]
-    T --> V[Reduce dimensionality using PCA ("Metamorphosis")]
+    S --> U[Reduce dimensionality using PCA Moby Dick]
+    T --> V[Reduce dimensionality using PCA Metamorphosis]
     
-    U --> W[Visualize in 3D space ("Moby Dick")]
-    V --> X[Visualize in 3D space ("Metamorphosis")]
+    U --> W[Visualize in 3D space Moby Dick]
+    V --> X[Visualize in 3D space Metamorphosis]
     
     W --> Y[Show 3D plot]
     X --> Y
