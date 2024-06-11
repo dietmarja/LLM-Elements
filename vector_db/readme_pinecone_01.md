@@ -1,39 +1,29 @@
-<h1 align="center">Pinecone Vector Database </h1>
+<h1 align="center">Pinecone Vector Database</h1>
+Vector databases are crucial for setting up large language models. 
+Unlike traditional relational databases designed for tabular data or NoSQL databases like MongoDB that store data in JSON format, vector databases specialize in handling data via vector embeddings.
 
-Vector databases are important building blocks for setting up large language models. 
-While traditional relational databases are designed for tabular data and  NoSQL databases like MongoDB store data in JSON format, vector databases are specialized for handling any kind of data via vector embeddings.
+We will explore the Pinecone vector database, currently the most popular. 
+To understand how a vector database performs tasks like semantic search or functions as a long-term memory for large language models, we'll use Pinecone's free starter plan (Pinecone, 2024a). 
+A Pinecone API key, obtainable upon registration, is required to run the code described here. The free plan supports a single index and project.
 
+The code uses a serverless index, an indexing system that operates without users managing or provisioning servers. 
+On the free Starter plan, users can create serverless indexes only in the us-east-1 region of AWS. The cloud and region cannot be changed after a serverless index is created.
 
-Next we are looking into the vector database _Pinecone_ which is currently the most popular vector database. 
-To get a practical understanding how a vector database carries tasks like semantic search or work as a long term memory for large language models, we make use of the free starter plan installation of Pinecone (Pinecone, 2024a).
-A Pinecone API key is obtained upon registration, e.g., for a free plan to run the code described here. 
-The free plan of Pinecone supports a single index and project. 
-
-The code works with a serverless index which is an indexing system that operates without the need for users to manage or provision servers explicitly. 
-On the free Starter plan, user can create serverless indexes in the us-east-1 region of AWS only.
-The cloud and region cannot be changed after a serverless index is created.
-
-The code usage  remains within the scope of the free plan if only  basic operations like creating an index, upserting a small number of vectors, and running a few queries are performed. 
-To get detailed information about your personal current usage and limits, you can check your Pinecone account dashboard. 
-In case of concerns about potential costs, it is always a good idea to monitor the usage and refer to Pinecone's pricing documentation.
-
+The code remains within the scope of the free plan if only basic operations like creating an index, upserting a small number of vectors, and running a few queries are performed. For detailed information about your current usage and limits, check your Pinecone account dashboard. If you have concerns about potential costs, monitor your usage and refer to Pinecone's pricing documentation.
 
 
 ## Semantic Search
-The simple example spelled out in pinecone_01.ipynb shows how a vector database can be used for searching vectors which are found to be similar to a query vector. 
-Considering that in Pinecon the max vector dimensionality is 20,000, the example is extremly simple. 
-It procees on the basis of 3D vectors which allow for a 3D visualization. 
-In a nutshell, the code sets up a small vector database with 3D vectors, retrieves vectors similar to a query vector and illustrate the vectors in general and the query vector and similar vectors. 
-While the example is simple and it deliberately does not relate to LLMs to focus on the essential steps when working with Pinecone. 
+The example in pinecone_01.ipynb shows how a vector database can be used for searching vectors similar to a query vector. 
+Given that Pinecone allows a max vector dimensionality of 20,000, the example is extremely simple, using 3D vectors for visualization. 
+The code sets up a small vector database with 3D vectors, retrieves vectors similar to a query vector, and illustrates both the general vectors and the query and similar vectors. 
+This example is designed to focus on the essential steps when working with Pinecone, deliberately not relating to LLMs.
 
 
 
 ## Mermaid Diagram 
-The diagram below that illustrates how the code in pinecone_01.ipynb works. 
-Pinecone is initialized, any existing index is deleted and a new one created. 
-Then the programm creates a DataFrame with vectors, upserts them into the Pinecone index, and checks the index stats. 
-A query vector is defined, and the index is queried for similar vectors. The results are plotted in 3D, displaying original vectors, the query vector, and close vectors based on a defined similarity threshold.
-
+The diagram below illustrates how the code in pinecone_01.ipynb works. Pinecone is initialized, any existing index is deleted, and a new one is created. 
+The program then creates a DataFrame with vectors, upserts them into the Pinecone index, and checks the index stats. A query vector is defined, and the index is queried for similar vectors. 
+The results are plotted in 3D, displaying original vectors, the query vector, and similar vectors based on a defined similarity threshold.
 
 ```mermaid
 graph TD
@@ -61,10 +51,11 @@ graph TD
 
 
 ### Charts Produced by pinecone_01.ipynb
-The code produces two charts. On the left hand side  gives an idea of the simple collection of 3D vectors used. 
-The right hand side shows the query vector and the vectors found to be similar with it. 
-Pinecode allows for similarity calcution via different metrics: euclidean/manhattan/dotproduct/cosine. 
-The code makes use of euclidean similarity. 
+The code creates two charts. 
+The chart on the left illustrates the simple collection of 3D vectors used. 
+The right chart shows the query vector and the vectors found to be similar to it. 
+Pinecone allows for similarity calculation using different metrics: Euclidean, Manhattan, Dot Product, and Cosine. 
+This example uses Euclidean similarity.
 
 
 ![Chart generated by pinecone_01.ipynb](./pinecone_01.png)
