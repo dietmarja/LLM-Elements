@@ -2,25 +2,21 @@
 
 Vector databases are important building blocks for setting up large language models. 
 
-Vector databases are different from traditional relational databases designed to store tabular data. 
-They also differ from modern NoSQL databases such as MongoDB, which store data as JSON. 
-This is because vector databases are specifically built to store and retrieve a single type of data: vector embeddings.
-
-
-
-
-
-
-
+Vector databases differ from traditional relational databases, which are intended to store tabular data. 
+They also contrast with modern NoSQL databases like MongoDB that store data in JSON format. 
+Vector databases are uniquely designed to store and retrieve one specific type of data: vector embeddings.
 
 Next we are looking into the vector database _Pinecone_ currently the most popular vector database. 
 We make use of a free plan installation of Pinecone to get a practical understanding how a vector database 
 carries tasks like semantic search or work as a long term memory for large language models. 
 
+To run this example a Pinecone API is required that is obtained upon registration, e.g., for a free plan. 
+The free plan of Pinecone support a single index and project. 
 
 ## Semantic Search
 The example spelled out in pinecone_01.ipynb shows how a vector database can be used for searching vectors similar to a query vector
-
+In a nutshell, the codes sets up a small vector database with 3D vectors, retrieves vectors similar to a query vector and illustrate the vectors in general and the query vector and similar vectors. 
+While the example is simple, it does harness essential steps when working with Pinecone. 
 
 With serverless indexes, you don’t configure or manage any compute or storage resources.
 On the free Starter plan, you can create serverless indexes in the us-east-1 region of AWS only.
@@ -141,4 +137,10 @@ tensor([[ 0.3414, -0.2377, -0.2392, -0.2219],
         [-0.0715,  0.2588,  0.2680,  0.2750],
         [ 0.1021,  0.3189,  0.3937,  0.3194],
         [-0.1458, -0.3615, -0.0903, -0.2763]])
+````
 
+
+## References
+
+Pinecone (2024a). Opening up our free plan
+https://www.pinecone.io/blog/updated-free-plan/#Updates-to-the-free-plan
