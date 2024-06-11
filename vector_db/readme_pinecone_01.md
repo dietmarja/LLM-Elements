@@ -1,30 +1,55 @@
 <h1 align="center">Pinecone Vector Database </h1>
 
 Vector databases are important building blocks for setting up large language models. 
+While traditional relational databases are designed for tabular data and  NoSQL databases like MongoDB store data in JSON format, vector databases are specialized for handling any kind of data via vector embeddings.
 
-Vector databases differ from traditional relational databases, which are intended to store tabular data. 
-They also contrast with modern NoSQL databases like MongoDB that store data in JSON format. 
-Vector databases are uniquely designed to store and retrieve one specific type of data: vector embeddings.
 
-Next we are looking into the vector database _Pinecone_ currently the most popular vector database. 
-We make use of a free plan installation of Pinecone to get a practical understanding how a vector database 
-carries tasks like semantic search or work as a long term memory for large language models. 
+Next we are looking into the vector database _Pinecone_ which is currently the most popular vector database. 
+To get a practical understanding how a vector database carries tasks like semantic search or work as a long term memory for large language models, we make use of the free starter plan installation of Pinecone (Pinecone, 2024a)
+A Pinecone API key is obtained upon registration, e.g., for a free plan to run the code described here. 
+The free plan of Pinecone supports a single index and project. 
 
-To run this example a Pinecone API is required that is obtained upon registration, e.g., for a free plan. 
-The free plan of Pinecone support a single index and project. 
+The code works with a serverless index which is an indexing system that operates without the need for users to manage or provision servers explicitly. 
+On the free Starter plan, user can create serverless indexes in the us-east-1 region of AWS only.
+The cloud and region cannot be changed after a serverless index is created.
+
+The code usage  falls within the scope of the free plan if only  basic operations like creating an index, upserting a small number of vectors, and running a few queries are performed . 
+To get detailed information about your personal current usage and limits, you can check your Pinecone account dashboard. 
+If you have any concerns about potential costs, it is always a good idea to monitor your usage and refer to Pinecone's pricing documentation.
+
+
 
 ## Semantic Search
 The example spelled out in pinecone_01.ipynb shows how a vector database can be used for searching vectors similar to a query vector
 In a nutshell, the codes sets up a small vector database with 3D vectors, retrieves vectors similar to a query vector and illustrate the vectors in general and the query vector and similar vectors. 
 While the example is simple, it does harness essential steps when working with Pinecone. 
 
-With serverless indexes, you don’t configure or manage any compute or storage resources.
-On the free Starter plan, you can create serverless indexes in the us-east-1 region of AWS only.
-The cloud and region cannot be changed after a serverless index is created.
 
-Your current code usage should fall within the scope of the free plan if you're only performing basic operations like creating an index, upserting a small number of vectors, and running a few queries. However, if you exceed the limits of the free plan (e.g., by creating multiple large indexes or performing many operations), you might incur charges.
 
-To get detailed information about your current usage and limits, you can check your Pinecone account dashboard. If you have any concerns about potential costs, it is always a good idea to monitor your usage and refer to Pinecone's pricing documentation.
+## Mermaid Diagram 
+
+```mermaid
+graph TD
+    A[Start] --> B[Initialize Pinecone]
+    B --> C{Index exists?}
+    C -->|Yes| D[Delete existing index]
+    C -->|No| E[Create new index]
+    D --> E[Create new index]
+    E --> F[Connect to the index]
+    F --> G[Create DataFrame with vectors]
+    G --> H[Verify vectors_to_upsert format]
+    H --> I[Upsert vectors into the index]
+    I --> J[Wait for upsert to process]
+    J --> K[Describe index stats]
+    K --> L{Vectors upserted?}
+    L -->|Yes| M[Perform a query]
+    L -->|No| N[Error: No vectors upserted]
+    M --> O[Print query result]
+    O --> P[Plot results]
+    P --> Q[Show plot]
+    Q --> R[End]
+```
+
 
 
 
