@@ -5,6 +5,13 @@ Vector databases are important building blocks for setting up large language mod
 Next we are looking into the vector database Pinecone to get a practical understanding how a vector database 
 carries tasks like semantic search or work as a long term memory for large language models. 
 
+## 
+
+
+## Semantic Search
+The example spelled out in pinecone_01.ipynb shows how a vector database can be used for searching vectors similar to a query vector
+
+
 With serverless indexes, you don’t configure or manage any compute or storage resources.
 On the free Starter plan, you can create serverless indexes in the us-east-1 region of AWS only.
 The cloud and region cannot be changed after a serverless index is created.
