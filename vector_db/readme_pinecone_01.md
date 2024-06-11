@@ -5,7 +5,7 @@ While traditional relational databases are designed for tabular data and  NoSQL 
 
 
 Next we are looking into the vector database _Pinecone_ which is currently the most popular vector database. 
-To get a practical understanding how a vector database carries tasks like semantic search or work as a long term memory for large language models, we make use of the free starter plan installation of Pinecone (Pinecone, 2024a)
+To get a practical understanding how a vector database carries tasks like semantic search or work as a long term memory for large language models, we make use of the free starter plan installation of Pinecone (Pinecone, 2024a).
 A Pinecone API key is obtained upon registration, e.g., for a free plan to run the code described here. 
 The free plan of Pinecone supports a single index and project. 
 
@@ -13,20 +13,25 @@ The code works with a serverless index which is an indexing system that operates
 On the free Starter plan, user can create serverless indexes in the us-east-1 region of AWS only.
 The cloud and region cannot be changed after a serverless index is created.
 
-The code usage  falls within the scope of the free plan if only  basic operations like creating an index, upserting a small number of vectors, and running a few queries are performed . 
+The code usage  remains within the scope of the free plan if only  basic operations like creating an index, upserting a small number of vectors, and running a few queries are performed. 
 To get detailed information about your personal current usage and limits, you can check your Pinecone account dashboard. 
-If you have any concerns about potential costs, it is always a good idea to monitor your usage and refer to Pinecone's pricing documentation.
+In case of concerns about potential costs, it is always a good idea to monitor the usage and refer to Pinecone's pricing documentation.
 
 
 
 ## Semantic Search
 The example spelled out in pinecone_01.ipynb shows how a vector database can be used for searching vectors similar to a query vector
 In a nutshell, the codes sets up a small vector database with 3D vectors, retrieves vectors similar to a query vector and illustrate the vectors in general and the query vector and similar vectors. 
-While the example is simple, it does harness essential steps when working with Pinecone. 
+While the example is simple and it deliberately does not relate to LLMs to focus on the essential steps when working with Pinecone. 
 
 
 
 ## Mermaid Diagram 
+Below is a diagram that illustrate how the code in pinecone_01.ipynb works. 
+The code initializes Pinecone, deletes an existing index if found, and creates a new one. 
+It then creates a DataFrame with vectors, upserts them into the Pinecone index, and checks the index stats. 
+A query vector is defined, and the index is queried for similar vectors. The results are plotted in 3D, displaying original vectors, the query vector, and close vectors based on a defined similarity threshold.
+
 
 ```mermaid
 graph TD
