@@ -1,11 +1,21 @@
 <h1 align="center">Pinecone Vector Database </h1>
 
-
 Vector databases are important building blocks for setting up large language models. 
-Next we are looking into the vector database Pinecone to get a practical understanding how a vector database 
-carries tasks like semantic search or work as a long term memory for large language models. 
 
-## 
+Vector databases are different from traditional relational databases designed to store tabular data. 
+They also differ from modern NoSQL databases such as MongoDB, which store data as JSON. 
+This is because vector databases are specifically built to store and retrieve a single type of data: vector embeddings.
+
+
+
+
+
+
+
+
+Next we are looking into the vector database _Pinecone_ currently the most popular vector database. 
+We make use of a free plan installation of Pinecone to get a practical understanding how a vector database 
+carries tasks like semantic search or work as a long term memory for large language models. 
 
 
 ## Semantic Search
