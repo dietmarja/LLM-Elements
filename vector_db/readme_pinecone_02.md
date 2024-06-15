@@ -3,7 +3,7 @@ The provided code is a script that initializes a Pinecone index, extracts text f
 Two seminal papers of LLMs were harnessed used as play material. <p>
 
 * The "Lora Paper": Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L. & Chen, W. (2021). Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685.
-* The "Attention Paper": Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. Advances in neural information processing systems, 30.
+* The "Attention Paper": Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., & Polosukhin, I. (2017). Attention is all you need. Advances in neural information processing systems, 30.
 
 The code makes use of the Hugging Face sentence-transformers/all-MiniLM-L6-v2 model to convert the text into embeddings. The script also includes functions to fetch these embeddings from Pinecone and to query the index for relevant documents based on query embeddings.
 
