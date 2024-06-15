@@ -1,16 +1,11 @@
-<h1 align="center">Pinecone Vector Database</h1>
-Vector databases are crucial for setting up large language models. 
-Unlike traditional relational databases designed for tabular data or NoSQL databases like MongoDB that store data in JSON format, vector databases specialize in handling data via vector embeddings.
+<h1 align="center">Query-Document Matching Using Pinecone</h1>
+The provided code is a script that initializes a Pinecone index, extracts text from PDF documents, and stores each page of the PDFs as separate vectors in the Pinecone index. 
+Two seminal papers of LLMs were harnessed used as play material. <p>
 
-We will explore the Pinecone vector database, currently the most popular. 
-To understand how a vector database performs tasks like semantic search or functions as a long-term memory for large language models, we'll use Pinecone's free starter plan (Pinecone, 2024a). 
-A Pinecone API key, obtainable upon registration, is required to run the code described here. The free plan supports a single index and project.
+* The "Lora Paper": Hu, E. J., Shen, Y., Wallis, P., Allen-Zhu, Z., Li, Y., Wang, S., Wang, L. & Chen, W. (2021). Lora: Low-rank adaptation of large language models. arXiv preprint arXiv:2106.09685.
+* The "Attention Paper": Vaswani, A., Shazeer, N., Parmar, N., Uszkoreit, J., Jones, L., Gomez, A. N., ... & Polosukhin, I. (2017). Attention is all you need. Advances in neural information processing systems, 30.
 
-The code uses a serverless index, an indexing system that operates without users managing or provisioning servers. 
-On the free Starter plan, users can create serverless indexes only in the us-east-1 region of AWS. The cloud and region cannot be changed after a serverless index is created.
-
-The code remains within the scope of the free plan if only basic operations like creating an index, upserting a small number of vectors, and running a few queries are performed. For detailed information about your current usage and limits, check your Pinecone account dashboard. If you have concerns about potential costs, monitor your usage and refer to Pinecone's pricing documentation.
-
+The code makes use of the Hugging Face sentence-transformers/all-MiniLM-L6-v2 model to convert the text into embeddings. The script also includes functions to fetch these embeddings from Pinecone and to query the index for relevant documents based on query embeddings.
 
 ## Semantic Search
 The example in pinecone_01.ipynb shows how a vector database can be used for searching vectors similar to a query vector. 
