@@ -18,7 +18,8 @@ Output: Finally, the code prints the final summaries for each document (summary_
 
 ### Diagram for rag_01.ipynb
 
-```mermaid
+```
+mermaid
 graph TDgraph TD
     A[Start] --> B[Install necessary libraries]
     B --> C[Import libraries]
