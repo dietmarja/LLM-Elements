@@ -15,7 +15,7 @@ QLoRA, also known as LoRA 2.0, is a parameter-efficient fine-tuning (PEFT) metho
 
 
 Fine-tuning is necessary to give a pretrained large language model (LLM) a particular focus such that it is able to carry out a specific task in a desirable way. 
-However, fine-tuning large-scale models involves updating billions of parameters, which is extremely expensive in terms of memory and time requirements. 
+However, fine-tuning large-scale models may involve updating billions of parameters, which is extremely expensive in terms of memory and time requirements. 
 To address this issue, several techniques have been proposed to reduce the memory footprint of full parameter fine-tuning without compromising model quality. 
 A popular fine-tuning method that addresses the challenges of full-parameter fine-tuning is Low-Rank Adaptation (LoRA) by Hu et al. (2021).
 
