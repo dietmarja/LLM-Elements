@@ -1,11 +1,15 @@
-<h1 align="center">LoRA</h1>
+<h1 align="center">RAG</h1>
 
-Fine-tuning is essential for adapting a pretrained large language model (LLM) to perform specific tasks effectively. However, fine-tuning large-scale models, which involves updating billions of parameters, is highly demanding in terms of memory and time. To address this, parameter-efficient fine-tuning (PEFT) methods have been developed. These methods reduce the memory and execution time required for full parameter fine-tuning while maintaining model quality.
+Retrieval-Augmented Generation (RAG)  combines retrieval of relevant information, e.g., from pdf files, from the Web etc with generative models to create coherent and contextually rich responses. In this way RAG, inject operational knowledge into a pretrained large language model that have not been part of its training. 
 
-A notable PEFT method is Low-Rank Adaptation (LoRA) by Hu et al. (2021). LoRA addresses the challenges of full-parameter fine-tuning by updating only two smaller, lower-rank matrices instead of the original large weight matrix. 
-The final weights are obtained by adding the LoRA-adapted weights to the original matrix. LoRA has set a paradigm for efficient fine-tuning, inspiring numerous variations. 
 
-The Colab notebook `LoRa_01.ipynb` introduces a simple way to carry out Low-Rank Adaptation using dummy data. It trains and evaluates models with and without Low-Rank Adaptation for ranks 1 to 4, plots the training losses for comparison, and prints sample predictions to illustrate the effect of different LoRA ranks.
+
+The Colab notebook `RAG_01.ipynb` introduces a simple RAG pipeline. The generative model used is T5 (Text-to-Text Transfer Transformer) by Google here made available via the transformer library from Huggingface. 
+
+
+
+that brings pdf files into a LLM so that it can carry out a particular downstram task, which in this case is sdocument ummarization. 
+
 
 A weight matrix in the context of LLMs is usually denoted as $W \in \mathbb{R}^{m \times n}$. 
 In our example, the weight matrix is $W \in \mathbb{R}^{10 \times 5}$ which is simply a $10 \times 5$ matrix of real numbers. 
