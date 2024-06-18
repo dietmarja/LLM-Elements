@@ -1,7 +1,7 @@
 <h1 align="center">RAG</h1>
 
 Retrieval-Augmented Generation (RAG)  combines retrieval of relevant information, e.g., from pdf files, from the Web etc with generative models to create coherent and contextually rich responses. In this way RAG, injects operational knowledge into a pretrained large language model which has not been part of its training. 
-The Colab notebook `rag_01.ipynb` introduces a simple RAG pipeline. The generative model used is T5-large (Text-to-Text Transfer Transformer) by Google,which is here made available via the transformer library from Huggingface. Its essential processing steps are: 
+The Colab notebook `rag_01.ipynb` introduces a simple RAG pipeline.  Its essential processing steps are: 
 
 * Information Retrieval: Using the PyMuPDF library the code first extracts text from PDF files. It concatenates the text from all pages of each PDF file into a single string (eg., full_text_1, full_text_2 etc.). This step corresponds to the information retrieval component of RAG, where relevant information is retrieved from the documents.
 
@@ -12,6 +12,9 @@ The Colab notebook `rag_01.ipynb` introduces a simple RAG pipeline. The generati
 * Combining Summaries: After generating summaries for each chunk, the code combines them into a single string (combined_summary). Then, it generates a final summary by passing the combined_summary to the generate_summary function again. This step helps improve the coherence and flow of the final summary by summarizing the combined summaries.
 
 * Output: Finally, the code prints the final summaries for each document.
+
+The generative model used is T5-large (Text-to-Text Transfer Transformer) by Google,which is here made available via the transformer library from Huggingface. In previous experiemnts T5-small (60 M prameters, 6 heads) has been used which however produced only a poor output. T5-Large (770 M parameters, 16 heads) produces a much better output but suffers from a long processing time. 
+
 
 
 
