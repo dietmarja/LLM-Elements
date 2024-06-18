@@ -13,7 +13,7 @@ The Colab notebook `rag_01.ipynb` introduces a simple RAG pipeline.  Its essenti
 
 * Output: Finally, the code prints the final summaries for each document.
 
-The generative model used is T5-large (Text-to-Text Transfer Transformer) by Google,which is here made available via the transformer library from Huggingface. In previous experiemnts T5-small (60 M prameters, 6 heads) has been used which however produced only a poor output. T5-Large (770 M parameters, 16 heads) produces a much better output but suffers from a long processing time. 
+The generative model used is T5 (Text-to-Text Transfer Transformer) by Google (Raffel et al., 2020), in partiular T5-large here made available via the transformer library from Huggingface. In previous experiemnts T5-small (60 M prameters, 6 heads) has been used which however produced only a poor output. T5-Large (770 M parameters, 16 heads) produces a much better output but suffers from a long processing time. 
 
 
 
@@ -53,3 +53,5 @@ graph TD
     end
 ```
 
+### References
+Raffel, C., Shazeer, N., Roberts, A., Lee, K., Narang, S., Matena, M., ... & Liu, P. J. (2020). Exploring the limits of transfer learning with a unified text-to-text transformer. Journal of machine learning research, 21(140), 1-67.
