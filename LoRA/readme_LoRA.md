@@ -1,6 +1,6 @@
 <h1 align="center">LoRA</h1>
 
-Fine-tuning is essential for adapting a pretrained large language model (LLM) to perform specific tasks effectively. However, fine-tuning large-scale models, which involves updating billions of parameters, is highly demanding in terms of memory and time. To address this, parameter-efficient fine-tuning (PEFT) methods have been developed. These methods reduce the memory and execution time required for full parameter fine-tuning while maintaining model quality.
+Fine-tuning is essential for adapting a pretrained large language model (LLM) to perform specific tasks effectively. However, fine-tuning large-scale models may involve updating billions of parameters and is therefore highly demanding in terms of memory and time. To address this, parameter-efficient fine-tuning (PEFT) methods have been developed. These methods reduce the memory and execution time required for full parameter fine-tuning while maintaining model quality.
 
 A notable PEFT method is Low-Rank Adaptation (LoRA) by Hu et al. (2021). LoRA addresses the challenges of full-parameter fine-tuning by updating only two smaller, lower-rank matrices instead of the original large weight matrix. 
 The final weights are obtained by adding the LoRA-adapted weights to the original matrix. LoRA has set a paradigm for efficient fine-tuning, inspiring numerous variations. 
