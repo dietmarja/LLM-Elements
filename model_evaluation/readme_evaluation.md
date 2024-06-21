@@ -75,5 +75,7 @@ Not unexpectedly, there is a perfect accuracy (1.0) suggesting that the model mi
 </p>
 
 
-
+ <p align="center">
+    <img src="evaluation_result_01.png" alt="alternate text">
+ </p>
 
