@@ -1,8 +1,7 @@
 <h1 align="center">Model Evaluation</h1>
 
 The program evaluation_01.ipynb in this folder performs fine-tuning and evaluation of a pre-trained BERT model on a custom text classification dataset (text_classification_data.csv). 
-The data is available here and can be edited or extended easily. 
-Here’s a detailed breakdown of the what evaluation_01.ipynb does:
+The data is available here and can be edited or extended easily. Undoubtedly, this dataset is to small for a maningful evaluation. Its purpose here is to illustrate how a pretrained LLM can be evaluated. Here’s a detailed breakdown of the what evaluation_01.ipynb does:
 
 Installation and Uninstallation of Dependencies:
 
