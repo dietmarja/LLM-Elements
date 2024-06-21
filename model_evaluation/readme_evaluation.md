@@ -40,7 +40,6 @@ The data is available here and can be edited or extended easily. Undoubtedly, th
 The evaluation results are shown in the Figure below. 
 Not unexpectedly, there is a perfect accuracy (1.0) suggesting that the model might be overfitting to the training data which is a likely consequence of the small evaluation set used. 
 
-![My awesome image](evaluation_result_01.png)
 
 
 <p align="center">
