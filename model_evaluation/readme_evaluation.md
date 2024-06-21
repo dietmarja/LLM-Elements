@@ -1,5 +1,43 @@
 <h1 align="center">Model Evaluation</h1>
 
+The program evaluation_01.ipynb in this folder performs fine-tuning and evaluation of a pre-trained BERT model on a custom text classification dataset (text_classification_data.csv). 
+The data is available here and can be edited or extended easily. 
+Here’s a detailed breakdown of its functionality:
+
+Installation and Uninstallation of Dependencies:
+
+The program installs necessary libraries (transformers, datasets, and evaluate).
+It downgrades pyarrow and reinstalls cudf-cu12 and ibis-framework.
+Loading Pre-trained Model and Tokenizer:
+
+Loads the bert-base-uncased model from the Hugging Face Transformers library.
+Loads the corresponding tokenizer.
+Loading and Preparing the Dataset:
+
+Reads a CSV file containing text and labels for classification.
+Converts the pandas DataFrame to a Hugging Face Dataset.
+Preprocessing the Dataset:
+
+Applies tokenization and padding/truncation to the text data to prepare it for the model.
+Defining the Evaluation Metric:
+
+Uses the evaluate library to load the accuracy metric, which will be used to evaluate the model’s performance.
+Setting Up Training Arguments:
+
+Defines training parameters such as the output directory, number of epochs, batch sizes, and evaluation strategy.
+Splitting the Dataset:
+
+Splits the dataset into training and testing sets (80-20 split).
+Training the Model:
+
+Uses the Trainer class from the Transformers library to handle the training loop, evaluation, and logging.
+Trains the model for the specified number of epochs.
+
+
+
+
+
+
 - **Imports and Initialization**
   - The program imports necessary libraries: `torch`, `torch.nn`, `torch.optim`, and `matplotlib.pyplot`.
   - It defines a custom `LoRALayer` class, which implements the Low-Rank Adaptation (LoRA) mechanism by decomposing the weight matrix into two lower-rank matrices (Hu et al. (2021, p. 4).
