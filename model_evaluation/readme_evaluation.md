@@ -2,7 +2,7 @@
 
 The program evaluation_01.ipynb in this folder performs fine-tuning and evaluation of a pre-trained BERT model on a custom text classification dataset (text_classification_data.csv). 
 The data is available here and can be edited or extended easily. 
-Here’s a detailed breakdown of its functionality:
+Here’s a detailed breakdown of the what evaluation_01.ipynb does:
 
 Installation and Uninstallation of Dependencies:
 
