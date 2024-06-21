@@ -71,7 +71,7 @@ Not unexpectedly, there is a perfect accuracy (1.0) suggesting that the model mi
 
 
 <p align="center">
-  <img src="evaluation_result_01.png" />
+  <img src="evaluation_result_01.png" alt="Output produced by evaluation_01.png"> />
 </p>
 
 
