@@ -1,16 +1,4 @@
-<h1 align="center">LoRA</h1>
-
-Fine-tuning is essential for adapting a pretrained large language model (LLM) to perform specific tasks effectively. However, fine-tuning large-scale models, which involves updating billions of parameters, is highly demanding in terms of memory and time. To address this, parameter-efficient fine-tuning (PEFT) methods have been developed. These methods reduce the memory and execution time required for full parameter fine-tuning while maintaining model quality.
-
-A notable PEFT method is Low-Rank Adaptation (LoRA) by Hu et al. (2021). LoRA addresses the challenges of full-parameter fine-tuning by updating only two smaller, lower-rank matrices instead of the original large weight matrix. 
-The final weights are obtained by adding the LoRA-adapted weights to the original matrix. LoRA has set a paradigm for efficient fine-tuning, inspiring numerous variations. 
-
-The Colab notebook `LoRa_01.ipynb` introduces a simple way to carry out Low-Rank Adaptation using dummy data. It trains and evaluates models with and without Low-Rank Adaptation for ranks 1 to 4, plots the training losses for comparison, and prints sample predictions to illustrate the effect of different LoRA ranks.
-
-A weight matrix in the context of LLMs is usually denoted as $W \in \mathbb{R}^{m \times n}$. 
-In our example, the weight matrix is $W \in \mathbb{R}^{10 \times 5}$ which is simply a $10 \times 5$ matrix of real numbers. 
-Its full rank $d$ is $\min(10, 5) = 5$. 
-The question that this example program seeks to answer is whether a lower-rank adaptation of the weight matrix will result in approximately equal performance compared to the full rank. Against this background, the program can be described as follows:
+<h1 align="center">Model Evaluation</h1>
 
 - **Imports and Initialization**
   - The program imports necessary libraries: `torch`, `torch.nn`, `torch.optim`, and `matplotlib.pyplot`.
