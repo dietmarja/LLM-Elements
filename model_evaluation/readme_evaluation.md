@@ -36,6 +36,29 @@ The data is available here and can be edited or extended easily. Undoubtedly, th
 
 
 
+
+### Diagram for embeddings_01.ipynb
+
+```mermaid
+graph TD
+    A[Start] --> B[Install Dependencies]
+    B --> C[Load Pre-trained Model and Tokenizer]
+    C --> D[Load Custom Dataset]
+    D --> E[Convert DataFrame to HuggingFace Dataset]
+    E --> F[Preprocess Dataset]
+    F --> G[Define Evaluation Metric]
+    G --> H[Setup Training Arguments]
+    H --> I[Split Dataset]
+    I --> J[Create Trainer]
+    J --> K[Train Model]
+    K --> L[Evaluate Model]
+    L --> M[Print Evaluation Results]
+    M --> N[End]
+```
+
+
+
+
 ### Evaluation
 The evaluation results are shown in the Figure below. 
 Not unexpectedly, there is a perfect accuracy (1.0) suggesting that the model might be overfitting to the training data which is a likely consequence of the small evaluation set used. 
