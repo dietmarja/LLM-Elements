@@ -2,7 +2,7 @@
 
 The program evaluation_01.ipynb in this folder fine-tunes and evaluates BertForSequenceClassification which 
 is a pretrained model from the BERT-model-family made available via Hugingface's transformer library. 
-Built on top of the base BERT model, BertForSequenceClassification adds a classification head on top of the 
+Built as an extension of the base BERT model, BertForSequenceClassification adds a classification head on top of the 
 BERT encoder. Here, BertForSequenceClassification trained and evaluated against a binary classification task of 0/1 movie assessments.
 A simple set of labeled data (text_classification_data.csv) is split into training and testing set used accordingly by the program. 
 Accuracy is used as an evaluation metric. The data is available here and can be easily be edited or extended. For a meaningful evaluation the dataset is too small. Its purpose  is to illustrate how a pretrained LLM can be evaluated. Next is breakdown of the what evaluation_01.ipynb does:
