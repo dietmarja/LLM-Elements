@@ -1,6 +1,6 @@
 <h1 align="center">Model Evaluation (i) </h1>
 
-The program evaluation_01.ipynb in this folder fine-tunes and evaluates BertForSequenceClassification which 
+The program evaluation_01.ipynb in fine-tunes and evaluates BertForSequenceClassification which 
 is a pretrained model from the BERT-model-family made available via Hugingface's transformer library. 
 Built as an extension of the base BERT model, BertForSequenceClassification adds a classification head on top of the 
 BERT encoder. Here, BertForSequenceClassification trained and evaluated against a binary classification task of 0/1 movie assessments.
