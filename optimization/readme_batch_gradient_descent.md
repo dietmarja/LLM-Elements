@@ -3,7 +3,7 @@
 The code in `batch_gradient_descent` implements a simple standard or batch gradient descent algorithm to minimize the cost function $f(v) = v^2$.
 
 ## Gradient Function
-The gradient of \( f(v) = v^2 \) is computed as \( \nabla(v) = 2v \).
+The gradient of  $f(v) = v^2$ is computed as $\nabla(v) = 2v$.
 
 ## Algorithm Steps
 
