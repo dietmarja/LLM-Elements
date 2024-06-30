@@ -13,12 +13,10 @@ The gradient of  $f(v) = v^2$ is computed as $\nabla(v) = 2v$.
 
 ### 2. Iteration Loop
 - **Loop Execution**: The loop runs for a maximum of `num_iterations` times.
-- **Gradient Calculation**: The gradient \(\nabla f(\mathbf{v})\) is computed using the provided `gradient_func`.
+- **Gradient Calculation**: The gradient $\nabla f(\mathbf{v})$ is computed using the provided `gradient_func`.
   - The parameter update step is calculated as:
-    \[
-    \Delta \mathbf{v} = -\alpha \nabla f(\mathbf{v})
-    \]
-  - Here, \(\alpha\) is the learning rate.
+    $\Delta \mathbf{v} = -\alpha \nabla f(\mathbf{v})$
+  - Here, $\alpha$ is the learning rate.
 - **Convergence Check**: The algorithm checks if the magnitude of the update step \(\Delta \mathbf{v}\) is less than or equal to the tolerance `tol`.
   - If the condition is met, the loop breaks early, indicating convergence.
 - **Parameter Update**: The parameter \(\mathbf{v}\) is updated as:
