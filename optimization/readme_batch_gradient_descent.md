@@ -24,5 +24,3 @@ The gradient of  $f(v) = v^2$ is computed as $\nabla(v) = 2v$.
 
 ### 3. Return
 - The function returns the optimized parameter value and the list of parameter values at each iteration.
-
-## Gradient Function Example
