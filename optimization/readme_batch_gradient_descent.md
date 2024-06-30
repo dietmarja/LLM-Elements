@@ -8,7 +8,7 @@ The gradient of  $f(v) = v^2$ is computed as $\nabla(v) = 2v$.
 ## Algorithm Steps
 
 ### 1. Initialization
-- The parameter \(\mathbf{v}\) is initialized with `initial_value`.
+- The parameter $\mathbf{v}$ is initialized with `initial_value`.
 - A list `param_values` is created to store the parameter values at each iteration.
 
 ### 2. Iteration Loop
