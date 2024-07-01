@@ -1,6 +1,6 @@
 # Batch Gradient Descent
 
-The code in `batch_gradient_descent1.ipynb` implements a simple standard or batch gradient descent algorithm to minimize the cost function $f(v) = v^2$.
+The code in `batch_gradient_descent.ipynb` implements a simple standard or batch gradient descent algorithm to minimize the cost function $f(v) = v^2$.
 
 ## Gradient Function
 The gradient of  $f(v) = v^2$ is computed as $\nabla(v) = 2v$.
