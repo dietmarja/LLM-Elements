@@ -6,12 +6,13 @@ The code in `stochastic_gradient_descent` implements a simple stochastic gradien
 
 | Aspect                           | Batch Gradient Descent                  | Stochastic Gradient Descent (SGD)      |
 |----------------------------------|-----------------------------------------|----------------------------------------|
+|----------------------------------|-----------------------------------------|----------------------------------------|
 | **Gradient Computation**         | Entire dataset                          | Single data point (or small batch)     |
 | **Update Step**                  | Once per epoch (after all data points)  | After each data point (or small batch) |
 | **Stability and Accuracy**       | Smooth and stable updates               | Noisy and erratic updates              |
 | **Speed of Convergence**         | Slower for large datasets               | Faster updates, potentially quicker convergence |
 | **Memory Usage**                 | Higher (entire dataset in memory)       | Lower (one data point or small batch)  |
-| **Tendency to Escape Local Minima** | Less likely                             | More likely due to noisier updates     |
+| **Tendency to Escape Local Minima** | Less likely                          | More likely due to noisier updates     |
 
 
 
