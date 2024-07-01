@@ -1,4 +1,8 @@
-## Comparison of Gradient Descent Variants
+# Optimization Algorithms
+
+Optimization algorithms are key elements in machine learning. 
+To a large degree the intelligence of an AI model is represented by the model parameters (weights and biased), and optimization algorithms allows us to idenfiy them. 
+The litle programs in the folder ´optimization` introduce 4 essential optimization algorithms. The table below offers a bird'ee overview of them
 
 | Aspect              | Batch Gradient Descent (BGD)         | Stochastic Gradient Descent (SGD)    | Mini-Batch Gradient Descent | AdamW |
 |----------------------------------|-----------------------------------------|----------------------------------------|------------------------------------|--------|
