@@ -8,6 +8,7 @@ This file lists the URLs referenced in this repository:
 - [Pinecone](https://pinecone.io/)
 - [OpenAI](https://openai.com/)
 - [Weights & Biases](https://wandb.ai/home)
+- https://github.com/mazhengcn/suggested-notation-for-machine-learning
 
 ## Licensing Information
 
