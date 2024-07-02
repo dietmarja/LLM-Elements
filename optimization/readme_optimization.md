@@ -1,8 +1,8 @@
 # Optimization Algorithms
 
 Optimization algorithms are key elements in machine learning. 
-To a large degree the intelligence of an AI model is represented by the model parameters (weights and biased), and optimization algorithms allows us to idenfiy them. 
-The  programs in the  `optimization` folder introduce 4 essential optimization algorithms. The table below offers a bird's eye overview of them
+To a large degree, the intelligence of an AI model is represented by the model parameters (weights and biased), and optimization algorithms allows us to idenfiy them. 
+5 essential optimization algorithms are introduced by programs in the  `optimization` folder. The table below offers a bird's eye overview of them
 
 |  | **Batch Gradient Descent (BGD)** | **Stochastic Gradient Descent (SGD)** | **Mini-Batch Gradient Descent** | **AdamW** | **RMSprop** |
 |---|---|---|---|---|---|
