@@ -4,7 +4,7 @@ Optimization algorithms are key elements in machine learning.
 To a large degree the intelligence of an AI model is represented by the model parameters (weights and biased), and optimization algorithms allows us to idenfiy them. 
 The  programs in the  `optimization` folder introduce 4 essential optimization algorithms. The table below offers a bird's eye overview of them
 
-| **Aspect**    | **Batch Gradient Descent (BGD)** | **Stochastic Gradient Descent (SGD)** | **Mini-Batch Gradient Descent** | **AdamW** |
+|         | **Batch Gradient Descent (BGD)** | **Stochastic Gradient Descent (SGD)** | **Mini-Batch Gradient Descent** | **AdamW** |
 |----------------------------------|-----------------------------------------|----------------------------------------|------------------------------------|--------|
 | **Gradient Computation**   | Entire dataset       | Single data point | Small batch of data points | Uses moving averages of gradients |
 | **Update Step**     | Once per epoch (after all data points) | After each data point (or small batch) | After each mini-batch | Every iteration (uses accumulated gradients) |
