@@ -49,6 +49,6 @@ The code generates three charts:<br>
 * word_embeddings.png: A 2D visualization of the learned word embeddings.
 
 
-# References
+## References
 A Gentle Introduction to torch.autograd<br>
 https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html
