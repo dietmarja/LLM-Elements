@@ -40,7 +40,6 @@ graph TD
     O
 end
 ```
-```
 
 
 The code generates three charts:<br>
