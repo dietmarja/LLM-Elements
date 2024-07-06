@@ -1,8 +1,7 @@
-# PyTorch’s automatic differentiation engine `autograd`
- `pytoch.autograd` is the PyTorch’s  workhorse when it come to neural network training. 
- More specifically,  `pytoch.autograd`  computes gradients of tensor operations, allowing for efficient backpropagation during the training process.
-
-Below is a simple example that demonstrates the use of autograd in a context typical forlanguage models. 
+# PyTorch's automatic differentiation engine `autograd`
+ `pytorch.autograd` is PyTorch's workhorse when it comes to neural network training. 
+ More specifically, `pytorch.autograd` computes gradients of tensor operations, allowing for efficient backpropagation during the training process.
+Below is a simple example that demonstrates the use of autograd in a context typical for language models. 
 We'll create a small neural network that predicts the next word in a sequence, which is a fundamental task in language modeling:
 
 ```mermaid
@@ -41,14 +40,6 @@ graph TD
     O
     end
     ```
-
-
-
-To illustrate what the code does three files are generated
-
-+ model_graph.png: A visualization of the model's computational graph.
-+ loss_plot.png: A plot showing how the loss decreases over time for both Adam and SGD optimizers.
-+ word_embeddings.png: A 2D visualization of the learned word embeddings.
 
 
 # References
