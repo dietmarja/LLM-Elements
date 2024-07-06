@@ -45,7 +45,11 @@ end
 
 The code generates three charts:<br>
 
-+ model_graph.png: A visualization of the model's computational graph.
-+ loss_plot.png: A plot showing how the loss decreases over time for both Adam and SGD optimizers.
-+ word_embeddings.png: A 2D visualization of the learned word embeddings.
+* model_graph.png: A visualization of the model's computational graph.
+* loss_plot.png: A plot showing how the loss decreases over time for both Adam and SGD optimizers.
+* word_embeddings.png: A 2D visualization of the learned word embeddings.
 
+
+# References
+A Gentle Introduction to torch.autograd<br>
+https://pytorch.org/tutorials/beginner/blitz/autograd_tutorial.html
