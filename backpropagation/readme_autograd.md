@@ -7,8 +7,6 @@ We'll create a small neural network that predicts the next word in a sequence, w
 
 To illustrate what the code does three files are generated
 
-It generates three files:
-
 + model_graph.png: A visualization of the model's computational graph.
 + loss_plot.png: A plot showing how the loss decreases over time for both Adam and SGD optimizers.
 + word_embeddings.png: A 2D visualization of the learned word embeddings.
